@@ -82,3 +82,46 @@ python manage.py runserver
   }
 }
 
+### User Login
+
+- **Endpoint:** `/Login/`
+- **Method:** `POST`
+- **Payload Example:**
+  ```json
+  {
+    "email": "john@website.com",
+    "password": "your_password"
+  }
+
+
+output
+{
+  "success": true,
+  "message": "Login successful"
+}
+
+### Store Paragraphs
+
+- **Endpoint:** `/paragraphs/store/`
+- **Method:** `POST`
+- **Payload Example:**
+  ```json
+  {
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet.",
+      "Consectetur adipiscing elit."
+    ]
+  }
+{
+  "message": "Paragraphs and words stored successfully"
+}
+### Search Paragraphs
+
+- **Endpoint:** `/paragraphs/search`
+- **Parameter:** `word` (word to search)
+- **Response Example:**
+  ```json
+  [
+    { "paragraph_id": 1 },
+    { "paragraph_id": 2 }
+  ]
