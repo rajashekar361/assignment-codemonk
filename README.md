@@ -41,6 +41,7 @@ Step-by-step instructions to get the development environment set up.
 
 docker-compose build
 docker-compose up -d db
+```
 
 3.** Apply migrations:**
    ```bash
@@ -49,8 +50,10 @@ python manage.py makemigrations authentication
 python manage.py migrate authentication
 python manage.py makemigrations paragraphs
 python manage.py migrate paragraphs
+```
 **RUnserver **
 bash-python manage.py runserver
+
 # Example of API Endpoints section in code format
 # List all available API endpoints with a brief description.
 
