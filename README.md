@@ -36,3 +36,27 @@ Step-by-step instructions to get the development environment set up.
    ```bash
    git clone https://github.com/rajashekar361/assignment-codemonk.git
    cd repository
+2.**Build Docker containers:**
+docker-compose build
+docker-compose up -d db
+
+# Apply migrations:
+python manage.py makemigrations authentication
+python manage.py migrate authentication
+python manage.py makemigrations paragraphs
+python manage.py migrate paragraphs
+**RUnserver **
+bash-python manage.py runserver
+# Example of API Endpoints section in code format
+# List all available API endpoints with a brief description.
+
+# User Registration
+- Endpoint: `/Signup/`
+- Method: `POST`
+- Payload Example:
+  ```json
+  {
+    "email": "john@website.com",
+    "name": "John Doe",
+    "password": "your_password"
+  }
