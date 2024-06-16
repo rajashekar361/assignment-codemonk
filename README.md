@@ -37,10 +37,14 @@ Step-by-step instructions to get the development environment set up.
    git clone https://github.com/rajashekar361/assignment-codemonk.git
    cd repository
 2.**Build Docker containers:**
+   ```bash
+
 docker-compose build
 docker-compose up -d db
 
-# Apply migrations:
+3.** Apply migrations:**
+   ```bash
+
 python manage.py makemigrations authentication
 python manage.py migrate authentication
 python manage.py makemigrations paragraphs
