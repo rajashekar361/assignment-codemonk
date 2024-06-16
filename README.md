@@ -52,7 +52,9 @@ python manage.py makemigrations paragraphs
 python manage.py migrate paragraphs
 ```
 **RUnserver **
-bash-python manage.py runserver
+```bash
+python manage.py runserver
+```
 
 # Example of API Endpoints section in code format
 # List all available API endpoints with a brief description.
@@ -67,3 +69,16 @@ bash-python manage.py runserver
     "name": "John Doe",
     "password": "your_password"
   }
+  ```
+  output
+  ```json
+  {
+  "status": true,
+  "status_code": 201,
+  "message": "Successfully Registered.",
+  "data": {
+    "email": "john@website.com",
+    "name": "John Doe"
+  }
+}
+
