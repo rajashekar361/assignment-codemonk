@@ -108,8 +108,8 @@ output
   ```json
   {
     "paragraphs": [
-      "Lorem ipsum dolor sit amet.",
-      "Consectetur adipiscing elit."
+      "Lorem ipsum dolor sit amet........",
+      "Consectetur adipiscing elit.........."
     ]
   }
 {
